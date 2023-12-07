@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="col-lg-3 centered">
-      <img src="../assets/logo.png" />
+      <img src="../../assets/logo.png" />
     </div>
     <h1>SurveyJS + Vue Quickstart Template</h1>
     <div class="col-lg-9 jumbotron">
