@@ -3,7 +3,7 @@ import { SurveyCreatorModel } from 'survey-creator-core';
 const creator = new SurveyCreatorModel({});
 </script>
 <template>
-    <div style="position: fixed; top: 0; left: 0; width: 100vw; height: 100vh">
+    <div style="position: fixed; top: 52px; left: 0; width: 100vw; bottom: 0">
         <SurveyCreatorComponent :model="creator"></SurveyCreatorComponent>
     </div>
 </template>
