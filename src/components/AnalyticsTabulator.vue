@@ -13,8 +13,8 @@ import "jspdf-autotable"
 import jsPDF from "jspdf";
 import * as XLSX from "xlsx";
 
-window.jsPDF = jsPDF;
-window.XLSX = XLSX;
+window["jsPDF"] = jsPDF;
+window["XLSX"] = XLSX;
 
 import { Tabulator } from "survey-analytics/survey.analytics.tabulator";
 
@@ -27,7 +27,7 @@ const survey = new Model(json);
 
 onMounted(() => {
     const surveyAnalyticsTabulator = new Tabulator(survey, data);
-    surveyAnalyticsTabulator.render(document.getElementById("tableContainer"));
+    surveyAnalyticsTabulator.render(document.getElementById("tableContainer") as HTMLElement);
 });
 
 </script>

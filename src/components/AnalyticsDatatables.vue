@@ -29,6 +29,6 @@ const survey = new Model(json);
 onMounted(() => {
     DataTables.initJQuery($);
     const surveyAnalyticsDataTables = new DataTables(survey, data);
-    surveyAnalyticsDataTables.render(document.getElementById("tableContainer"));
+    surveyAnalyticsDataTables.render(document.getElementById("tableContainer") as HTMLElement);
 });
 </script>

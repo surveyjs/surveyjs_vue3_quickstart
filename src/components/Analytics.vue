@@ -21,7 +21,7 @@ onMounted(() => {
       data
     );
     surveyAnalytics.render(
-      document.getElementById("summaryContainer")
+      document.getElementById("summaryContainer") as HTMLElement
     );
 });
 </script>
