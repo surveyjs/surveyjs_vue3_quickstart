@@ -8,11 +8,15 @@ import ThemeTab from "../components/test/ThemeTab.vue";
 import ByPage from "../components/test/ByPage.vue";
 import DropdownCollapse from "../components/test/DropdownCollapse.vue";
 import CustomWidget from "../components/test/CustomWidget.vue";
+import Example from "../components/Example.vue"
+import Library from "../components/Library.vue"
 
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    { path: "/", component: Example },
+    { path: "/library", component: Library },
     { path: "/testCafe/testcafe", component: Default },
     { path: "/testCafe/preview-theme-switcher", component: ThemeSwitcher },
     { path: "/testCafe/theme-for-preview-option", component: ThemePreview },
