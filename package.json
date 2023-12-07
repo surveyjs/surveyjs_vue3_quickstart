@@ -1,5 +1,6 @@
 {
-  "name": "SurveyJS Vue3 Quickstart Boilerplate",
+  "name": "surveyjs-vue3-quickstart",
+  "description": "SurveyJS Vue3 Quickstart Boilerplate",
   "version": "0.0.0",
   "private": true,
   "scripts": {
