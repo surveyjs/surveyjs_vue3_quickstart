@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import Example from "./components/Example.vue";
-import Library from "./components/Library.vue";
 import RouterPage from "./router/RoutePage.vue";
 import "bootstrap/dist/css/bootstrap.css";
 </script>
