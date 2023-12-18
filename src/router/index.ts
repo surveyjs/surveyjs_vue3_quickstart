@@ -3,10 +3,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from "../components/Home.vue"
 import Survey from "../components/Survey.vue"
 import Creator from "../components/Creator.vue"
-import ExportToPDF from "../components/ExportToPDF.vue"
-import Analytics from "../components/Analytics.vue"
-import AnalyticsTabulator from "../components/AnalyticsTabulator.vue"
-import AnalyticsDatatables from "../components/AnalyticsDatatables.vue"
+import PDFGenerator from "../components/PDFGenerator.vue"
+import Dashboard from "../components/Dashboard.vue"
+import DashboardTabulator from "../components/DashboardTabulator.vue"
+import DashboardDatatables from "../components/DashboardDatatables.vue"
 
 
 const router = createRouter({
@@ -15,10 +15,10 @@ const router = createRouter({
     { path: "/", component: Home },
     { path: "/survey", component: Survey },
     { path: "/creator", component: Creator },
-    { path: "/exportpdf", component: ExportToPDF },
-    { path: "/analytics", component: Analytics },
-    { path: "/analyticstabulator", component: AnalyticsTabulator },
-    { path: "/analyticsdatatables", component: AnalyticsDatatables },
+    { path: "/exportpdf", component: PDFGenerator },
+    { path: "/analytics", component: Dashboard },
+    { path: "/analyticstabulator", component: DashboardTabulator },
+    { path: "/analyticsdatatables", component: DashboardDatatables },
   ]
 })
 

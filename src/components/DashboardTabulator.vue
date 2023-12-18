@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Survey Analytics - Table View</h1>
+    <h1>SurveyJS Dashboard - Table View</h1>
     <span>Uses Tabulator supported only by modern browsers.</span>
     <div id="tableContainer"></div>
   </div>
@@ -18,7 +18,7 @@ window["XLSX"] = XLSX;
 
 import { Tabulator } from "survey-analytics/survey.analytics.tabulator";
 
-import { json, data } from "../../data/analytics_data";
+import { json, data } from "../../data/dashboard_data";
 
 import "survey-analytics/survey.analytics.tabulator.min.css";
 import "tabulator-tables/dist/css/tabulator.min.css";
@@ -26,8 +26,8 @@ import "tabulator-tables/dist/css/tabulator.min.css";
 const survey = new Model(json);
 
 onMounted(() => {
-    const surveyAnalyticsTabulator = new Tabulator(survey, data);
-    surveyAnalyticsTabulator.render(document.getElementById("tableContainer") as HTMLElement);
+    const dashboardTabulator = new Tabulator(survey, data);
+    dashboardTabulator.render(document.getElementById("tableContainer") as HTMLElement);
 });
 
-</script>
+</script>../../data/dashboard_data

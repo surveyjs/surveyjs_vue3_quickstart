@@ -7,23 +7,23 @@ import "bootstrap/dist/css/bootstrap.css";
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="/">SurveyJS + Vue</a>
+          <a class="navbar-brand" href="/">SurveyJS + Vue 3</a>
         </div>
         <ul class="nav navbar-nav">
           <li>
             <router-link to="/">Home</router-link>
           </li>
           <li>
-            <router-link to="/survey">Survey</router-link>
+            <router-link to="/survey">Form Library</router-link>
           </li>
           <li>
             <router-link to="/creator">Survey Creator</router-link>
           </li>
           <li>
-            <router-link to="/exportpdf">PDF Export</router-link>
+            <router-link to="/exportpdf">PDF Generator</router-link>
           </li>
           <li>
-            <router-link to="/analytics">Analytics</router-link>
+            <router-link to="/analytics">Dashboard</router-link>
           </li>
           <li>
             <router-link to="/analyticstabulator">Results Table</router-link>

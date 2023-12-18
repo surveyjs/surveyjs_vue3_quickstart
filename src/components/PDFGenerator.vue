@@ -1,8 +1,8 @@
 <template>
   <div class="container">
-    <h1>SurveyJS PDF Export</h1>
+    <h1>SurveyJS PDF Generator</h1>
     <div class="jumbotron">
-      <p>SurveyJS PDF Export is a client-side extension over the SurveyJS Library that enables users to save surveys as PDF documents.</p>
+      <p>SurveyJS PDF Generator is a client-side extension over the SurveyJS Form Library that enables users to save surveys as PDF documents.</p>
       <p>NOTE: Dynamic elements and characteristics (visibility, validation, navigation buttons) are not supported.</p>
       <p>Click the button below to export survey to a PDF document.</p>
       <button v-on:click="savePDF">Save as PDF</button>

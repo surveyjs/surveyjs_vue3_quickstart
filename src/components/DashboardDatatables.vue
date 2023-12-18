@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Survey Analytics - Table View (old browsers support)</h1>
+    <h1>SurveyJS Dashboard - Table View (old browsers support)</h1>
     <span>Uses DataTables (compatible with IE10+)</span>
     <div id="tableContainer"></div>
   </div>
@@ -10,7 +10,7 @@
 import { ref, computed, onMounted } from "vue";
 import { Model } from "survey-core";
 import { DataTables } from "survey-analytics/survey.analytics.datatables";
-import { json, data } from "../../data/analytics_data";
+import { json, data } from "../../data/dashboard_data";
 
 import $ from "jquery";
 import "datatables.net/js/jquery.dataTables.js";
@@ -28,7 +28,7 @@ const survey = new Model(json);
 
 onMounted(() => {
     DataTables.initJQuery($);
-    const surveyAnalyticsDataTables = new DataTables(survey, data);
-    surveyAnalyticsDataTables.render(document.getElementById("tableContainer") as HTMLElement);
+    const dashboardDataTables = new DataTables(survey, data);
+    dashboardDataTables.render(document.getElementById("tableContainer") as HTMLElement);
 });
-</script>
+</script>../../data/dashboard_data
