@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, computed, onMounted } from "vue";
+import { onMounted } from "vue";
 import { Model } from "survey-core";
 import { DataTables } from "survey-analytics/survey.analytics.datatables";
 import { json, data } from "../../data/dashboard_data";
@@ -31,4 +31,4 @@ onMounted(() => {
     const dashboardDataTables = new DataTables(survey, data);
     dashboardDataTables.render(document.getElementById("tableContainer") as HTMLElement);
 });
-</script>../../data/dashboard_data
+</script>

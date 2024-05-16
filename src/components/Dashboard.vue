@@ -9,7 +9,7 @@
 import { Model } from "survey-core";
 import { VisualizationPanel } from "survey-analytics";
 import { json, data } from "../../data/dashboard_data";
-import { ref, computed, onMounted } from "vue";
+import { onMounted } from "vue";
 
 import "survey-analytics/survey.analytics.min.css";
 
@@ -25,4 +25,3 @@ onMounted(() => {
     );
 });
 </script>
-../../data/dashboard_data

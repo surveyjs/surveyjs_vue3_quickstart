@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ref, computed, onMounted } from "vue";
+import { onMounted } from "vue";
 import { Model } from "survey-core";
 import "jspdf-autotable"
 import jsPDF from "jspdf";
@@ -30,4 +30,4 @@ onMounted(() => {
     dashboardTabulator.render(document.getElementById("tableContainer") as HTMLElement);
 });
 
-</script>../../data/dashboard_data
+</script>
