@@ -28,9 +28,6 @@ import "bootstrap/dist/css/bootstrap.css";
           <li>
             <router-link to="/analyticstabulator">Results Table</router-link>
           </li>
-          <li>
-            <router-link to="/analyticsdatatables">Results Table (IE Support)</router-link>
-          </li>
         </ul>
       </div>
     </nav>

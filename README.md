@@ -35,9 +35,6 @@ This template covers most basic use cases. You can find code examples for them i
   - As charts
     - [data/dashboard_data.js](data/dashboard_data.js)
     - [src/components/Dashboard.vue](src/components/Dashboard.vue)
-  - As a table (modern browsers)
+  - As a table
     - [data/dashboard_data.js](data/dashboard_data.js)
     - [src/components/DashboardTabulator.vue](src/components/DashboardTabulator.vue)
-  - As a table (old browsers)
-    - [data/dashboard_data.js](data/dashboard_data.js)
-    - [src/views/DashboardDatatables.vue](src/components/DashboardDatatables.vue)
