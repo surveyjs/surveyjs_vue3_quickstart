@@ -1,46 +1,40 @@
-# example
+# SurveyJS + Vue 3 Quickstart Template 
 
-This template should help get you started developing with Vue 3 in Vite.
+SurveyJS is a set of JavaScript components that allow you and your users to build surveys / forms, store them in your database, and visualize survey results for data analysis. This quick start template uses Vue 3 and the following SurveyJS components:
 
-## Recommended IDE Setup
+- [SurveyJS Form Library](https://surveyjs.io/form-library/documentation/overview)
+- [Survey Creator / Form Builder](https://surveyjs.io/survey-creator/documentation/overview)
+- [SurveyJS PDF Generator](https://surveyjs.io/pdf-generator/documentation/overview)
+- [SurveyJS Dashboard](https://surveyjs.io/dashboard/documentation/overview)
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+> NOTE: If you are looking for a similar quickstart template for a Vue 2 application, refer to the following project: [SurveyJS + Vue 2 Quickstart Template](https://github.com/surveyjs/surveyjs_vue_quickstart/).
 
-## Type Support for `.vue` Imports in TS
+## Run the application
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
-
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
-
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
+```bash
+git clone https://github.com/surveyjs/surveyjs_vue3_quickstart.git
+cd surveyjs_vue3_quickstart
+npm i
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+Open http://localhost:5173/ in your web browser.
 
-```sh
-npm run build
-```
+## Template structure
 
-### Lint with [ESLint](https://eslint.org/)
+This template covers most basic use cases. You can find code examples for them in the following files:
 
-```sh
-npm run lint
-```
+- Create a standalone survey
+  - [data/survey_json.js](data/survey_json.js)
+  - [src/components/Survey.vue](src/components/Survey.vue)
+- Add Survey Creator to a page
+  - [src/components/Creator.vue](src/components/Creator.vue)
+- Export a survey to a PDF document
+  - [src/components/PDFGenerator.vue](src/components/PDFGenerator.vue)
+- Visualize survey results
+  - As charts
+    - [data/dashboard_data.js](data/dashboard_data.js)
+    - [src/components/Dashboard.vue](src/components/Dashboard.vue)
+  - As a table
+    - [data/dashboard_data.js](data/dashboard_data.js)
+    - [src/components/DashboardTabulator.vue](src/components/DashboardTabulator.vue)

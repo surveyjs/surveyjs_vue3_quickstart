@@ -138,7 +138,7 @@ export const json = {
       visibleIf: '{useproduct} = "Yes"',
       title: "Which of our components do you use?",
       isRequired: true,
-      choices: ["Survey Library (Runner)", "Survey Creator", "Export to PDF", "SurveyJS Analytics"]
+      choices: ["Form Library", "Survey Creator", "PDF Generator", "SurveyJS Dashboard"]
     }, {
       type: "checkbox",
       name: "supported_devices",
